@@ -10,8 +10,20 @@
 
 	nombre_guardar$ = left$(nombre_tg$,5)
 
-	a = Read from file... 'directorio_objetos$'/'nombre_tg$'
+	a = Read from file... 'directorio$'/'nombre_tg$'
 
-	Save as text file: "'directorio_objetos_1$'/'nombre_guardar$'.TextGrid"
+	Save as text file: "'directorio$'/'nombre_guardar$'.TextGrid"
 
+	# opcional:
+
+
+	###############################################
+
+	nombre_guardar_2$ = nombre_guardar$ + ".wav"
+
+	a = Read from file... 'directorio$'/'nombre_audio$'
+
+	Save as WAV file: "'directorio$'/'nombre_guardar_2$'"
+
+	###############################################
 	

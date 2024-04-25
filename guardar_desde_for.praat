@@ -18,6 +18,8 @@
 	# dentro de un for
 
 
+	# Guardar un TextGrid
+
 	# a partir de un strings
 
 	# obtiene nombre del elemento en el strings para abrir el archivo

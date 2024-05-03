@@ -1,9 +1,23 @@
 
+# Selecciona el directorio donde están los archivos
 
-for i to ene_wav
+directorio$ = chooseDirectory$ ("Elija directorio con archivos")
 
-select Strings ...
-audio$ = Get string... i
-audio = Read from file... 'directorio_origen$'/'audio$'
+strings1 = Create Strings as file list... lista_1 'directorio$'/*.wav
+
+# la extensión puede ser otra, ciertamente
+
+ene_archivos = Get number of strings
+
+
+
+for i to ene_archivos
+	select strings1
+# es lo mismo que
+# select Strings lista_1
+
+  audio$ = Get string... i
+
+  audio = Read from file... 'directorio$'/'audio$'
 
 endfor
